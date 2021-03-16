@@ -46,3 +46,23 @@ let selectedColors = ['red', 'blue']; // [] empty array
 selectedColors[2] = 'green';
 selectedColors[3] = 1;
 console.log(selectedColors.length);
+
+// performing a task
+function greet(name, lastName) {
+  console.log('Hello ' + name + ' ' + lastName);  
+}
+
+greet('John','Smith');
+greet('Mary');
+
+//calculating a value
+
+function square(number) {
+    return number * number;
+}
+
+// let number = square(2);
+// console.log(number);
+//or just:
+
+console.log(square(2));
