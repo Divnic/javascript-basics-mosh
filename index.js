@@ -41,3 +41,8 @@ let selection = 'name';
 person['selection'] = 'Mary';
 
 console.log(person.name);
+
+let selectedColors = ['red', 'blue']; // [] empty array
+selectedColors[2] = 'green';
+selectedColors[3] = 1;
+console.log(selectedColors.length);
