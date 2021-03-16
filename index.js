@@ -1,8 +1,4 @@
-// This is my first js code!
-console.log("Hello world");
 
-let name = 'Mosh'; //string literal
-console.log(name);
 
 // Variables cannot be reserved keywords
 // they should be meaningful
@@ -25,7 +21,23 @@ console.log(interestRate);
 // Primitive types:
 // string, number, boolean, undefined, null
 
-let age = 30; // number literal
 
 let isApproved = false; // boolean literal
 let selectedColor = null;
+
+// Reference types:
+// objects, arrays, functions
+
+let person = { //object literal
+name: 'Mosh',
+age: 30
+};
+
+// dot notation
+person.name = 'John';
+
+// bracket notation
+let selection = 'name';
+person['selection'] = 'Mary';
+
+console.log(person.name);
