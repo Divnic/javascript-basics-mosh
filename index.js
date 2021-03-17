@@ -1,24 +1,9 @@
 
-//comparison operators
+//If a customer has more than 100 points, 
+//they are a 'gold' customer, otherwise,
+//they are a silver customer.
 
-let x = 1;
+let points = 90;
+let type = points > 100 ? 'gold' : 'silver';
 
-// relational
-
-console.log(x > 0);
-console.log(x >= 0);
-console.log(x < 1);
-console.log(x <= 1);
-
-// strict equality (type + value)
-
-console.log(1 === 1);
-
-console.log(x === 1);
-console.log(x !== 1);
-
-// loose equality (if types don't match, only checks values)
-
-console.log('1' == 1); // converts right to string
-console.log(true == 1); // converts right to boolean
-
+console.log(type);
