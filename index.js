@@ -1,11 +1,24 @@
-// Assignement operators
 
-let x = 10;
+//comparison operators
 
-x++; //equivalent to x=x+1;
+let x = 1;
 
-x += 5; //equivalent to x = x+5;
+// relational
 
-x *=3; // equivalent to x=x*3;
+console.log(x > 0);
+console.log(x >= 0);
+console.log(x < 1);
+console.log(x <= 1);
 
-console.log(x);
+// strict equality (type + value)
+
+console.log(1 === 1);
+
+console.log(x === 1);
+console.log(x !== 1);
+
+// loose equality (if types don't match, only checks values)
+
+console.log('1' == 1); // converts right to string
+console.log(true == 1); // converts right to boolean
+
