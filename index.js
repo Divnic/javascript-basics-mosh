@@ -1,38 +1,29 @@
-// Logical AND (&&)
-// returns TRUE if both operands are true
+// decimal to binary conversion
 
-// console.log(true && true);
+// 1 = 00000001
+// 2 = 00000010
+// 3 = 00000011   R =  (result of 1 OR 2) 
+// 0 = 00000000  R =  (result of 1 AND 2) 
 
-let highIncome = true;
-let goodCreditScore = true;
-let eligibleForLoan = highIncome && goodCreditScore;
+// console.log(1 | 2); // | bitwise OR
+// console.log(1 & 2); // | bitwise AND
 
-console.log('Eligible', eligibleForLoan);
+// Imagine you wanna implement an access-controlled system
+// user can have these permissions:
+// read, write, execute
+// 00000100 = 4
+// 00000110
+// 00000111
 
-// Logical OR (||)
-// returns TRUE if one of the operands is true
+const readPermission = '4'
+const writePermission = '2'
+const executePermission = '1'
 
-let cheese = true;
-let dessert = false;
-let afterMeal = cheese || dessert;
+let myPermission = 0;
+myPermission = myPermission | readPermission | writePermission;
+// console.log(myPermission);
 
-console.log(afterMeal);
+let message = 
+(myPermission & readPermission) ? 'yes' : 'no';
 
-// not (!)
-let applicationRefused = !eligibleForLoan;
-
-console.log('Application Refused', applicationRefused);
-
-
-// Logical operators with Non-booleans ()
-
-// Falsy values: undefined, null, 0, (boolean) false,'' (empty string), NaN (not a number)
-
-// Anything not Falsy -> Truthy
-
-let userColor = 'red';
-let defaultColor = 'blue';
-let currentColor = userColor || defaultColor;
-
-console.log(currentColor);
-
+console.log(message);
